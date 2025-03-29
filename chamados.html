@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISK GLPI - Menu</title>
+    <link rel="stylesheet" href="./css/serviços.css">
+    <link rel="shortcut icon" href="./img/logo fisk.png" type="logo_fisk">
+</head>
+<body>
+    <main>
+        <nav>
+          <ul>
+            <li><a href="./serviços.html" target="_self">Serviços</a></li>
+            <li><a href="./sobrenos.html" target="_self"> Sobre nós</a></li>
+            <li><a href="./chamados.html" target="_self"> Chamados</a></li>
+          </ul>
+        </nav>
+        <header>
+            <img src="./img/logo fisk.png" alt="logo_fisk">
+        </header>
+        <section>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+            
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </fieldset>
+            
+                
+            
+                    <label for="problema">Problema:</label>
+                    <select id="problema name="problema">
+                      <option value="colocar meu filho">Quero colocar meu filho na escola</option>
+                      <option value="tirar meu fihlo ">Quero tirar meu filho da escolal</option>
+                    </select>
+                </fieldset>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <footer>
+            <p>Desenvolvido por: Pedro Henrique Viana Souza 1B T.I - <a href="https://fisk.com.br/cursos/ingles">Repositorio</a></p>
+        </footer>
+    </main>
+</body>
+</html>
